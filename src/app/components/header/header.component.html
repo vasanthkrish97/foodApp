@@ -1,0 +1,76 @@
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar ">
+    <div class="container justify-content-center ">
+      
+      <div class="col-lg-1 d-flex float-left mb-md-0">
+        <a [routerLink]="['']">
+        <span class="navbar-toggler-icon"></span>
+      </a>
+      </div>
+      <!-- product log -->
+      <div class="col-lg-1 d-flex float-left ">
+        <a href="/" class="navbar-brand">
+          <img src="../../../assets/logo/TestFood.png" class="logo-img d-flex justify-content-center align-items-center" alt="" />
+        </a>
+      </div>
+
+      <!-- vector Button for ul and li -->
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavBar"
+        aria-controls="myNavBar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- outfitt col -->
+      <div class="col-md-2">
+
+      </div>
+
+      <!-- routing ul and li -->
+
+      <div class="col-md-4 collapse navbar-collapse " id="myNavBar">
+        <!-- <div class="col-md-5 d-flex flex-wrap justify-content-center align-items-center mb-lg-0" id="myNavBar"> -->
+        <ul class="navbar-nav mb-2 mb-md-0 col-md-auto">
+          <li class="nav-item link-name">
+            <a [routerLink]="['explore']" class="link-name" href="/blog.html"
+              class="nav-link d-flex justify-content-center align-items-center">Explore</a>
+          </li>
+          
+          <li class="nav-item link-name"   >
+            <a [routerLink]="['home']" class="nav-link active d-flex justify-content-center align-items-center">Home</a>
+          </li>
+        
+          <li class="nav-item link-name">
+            <a [routerLink]="['recipes']" class="nav-link d-flex justify-content-center align-items-center">Recipes</a>
+          </li>
+          <li class="nav-item link-name">
+            <a [routerLink]="['about']" class="nav-link d-flex justify-content-center align-items-center">About</a>
+          </li>
+          <li class="nav-item link-name">
+            <a [routerLink]="['download']" class="link-name" href="/blog.html"
+              class="nav-link d-flex justify-content-center align-items-center">Download</a>
+          </li>
+          
+          
+
+       
+        </ul>
+      </div>
+      
+
+      <!-- brfore login button -->
+      <div class="col-lg-3 d-flex justify-content-center align-items-center mt-2">
+        <!-- <li class="btn">
+          <a [routerLink]="['user-layouts']" class=" register-btn ">Get-Started</a>
+        </li> -->
+        <button (click)="goToLogin()" type="button" class="btn register-btn">Get-Started</button>
+      </div>
+
+
+    </div>
+  </nav>
+</header>
+
+
+
